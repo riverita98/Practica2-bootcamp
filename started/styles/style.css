@@ -1,0 +1,48 @@
+h1 {
+    color: red;
+}
+
+p,
+li {
+    color: green;
+}
+
+.special {
+
+    font-weight: bold;
+}
+
+/*padre desp hijo*/
+li.special,
+span.special {
+    font-weight: bold;
+    color: orange;
+}
+
+/*todo dentro de hijo*/
+li em {
+    color: rebeccapurple;
+}
+
+/*brothers*/
+h1+p {
+    font-size: 200%;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+  }
